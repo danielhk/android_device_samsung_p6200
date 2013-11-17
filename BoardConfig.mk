@@ -19,16 +19,9 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/p6200/overlay
 # Include common smdk4210-tab configuration
 -include device/samsung/smdk4210-tab/BoardConfigCommon.mk
 
-# RIL
-BOARD_PROVIDES_LIBRIL := true
-BOARD_MODEM_TYPE := xmm6260
-
 TARGET_OTA_ASSERT_DEVICE := p6200,GT-P6200,GT-P6201,GT-P6200L
 
 TARGET_KERNEL_CONFIG := cyanogenmod_p6200_defconfig
-
-TARGET_RECOVERY_FSTAB := device/samsung/smdk4210-tab/fstab.smdk4210
-RECOVERY_FSTAB_VERSION := 2 
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6200/bluetooth
 
