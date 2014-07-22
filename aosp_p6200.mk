@@ -15,20 +15,20 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 600
-TARGET_SCREEN_WIDTH := 1024
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 1280
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := p6200
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-P6200
-PRODUCT_NAME := cm_p6200
+PRODUCT_NAME := aosp_p6200
 PRODUCT_RELEASE_NAME := GT-P6200
 
 # Set product name and build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P6800 BUILD_FINGERPRINT="samsung/GT-P6800/GT-P6800:4.3.1/JLS36I:user/release-keys" PRIVATE_BUILD_DESC="GT-P6800-user 4.3.1 JLS36I release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P6210 BUILD_FINGERPRINT="samsung/GT-P6200/GT-P6200:4.3.1/JLS36I:user/release-keys" PRIVATE_BUILD_DESC="GT-P6200-user 4.3.1 JLS36I release-keys"
