@@ -33,8 +33,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/telephony.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 PRODUCT_PACKAGES += \
     SamsungServiceMode \
