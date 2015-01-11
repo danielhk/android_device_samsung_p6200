@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
 # GPS
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 PRODUCT_COPY_FILES += \
-    device/samsung/smdk4210-tab/rootdir/init.smdk4210.gps.rc:root/init.smdk4210.gps.rc \
     device/samsung/smdk4210-tab/configs/etc/gps.cer:system/etc/gps.cer \
     device/samsung/smdk4210-tab/configs/etc/gps.xml:system/etc/gps.xml
 
