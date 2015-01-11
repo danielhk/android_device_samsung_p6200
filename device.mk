@@ -38,4 +38,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     SamsungServiceMode \
-    VoiceDialer
+    VoiceDialer \
+    libsecril-client \
+    libsecril-client-sap
