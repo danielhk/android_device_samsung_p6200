@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,3 +26,8 @@ TARGET_KERNEL_CONFIG := cyanogenmod_p6200_defconfig
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6200/bluetooth
 
 BOARD_HAS_EARPIECE := true
+
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+BOARD_MODEM_TYPE := xmm6260
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/p6200/overlay/include
