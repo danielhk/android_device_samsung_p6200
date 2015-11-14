@@ -29,8 +29,8 @@ BOARD_HAS_EARPIECE := true
 
 CUSTOM_BUILD := true
 
-# RIL
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/smdk4210-tab/overlay/include
-BOARD_PROVIDES_LIBRIL := true
-BOARD_MODEM_TYPE := xmm6260
-BOARD_RIL_CLASS := ../../../hardware/samsung/exynos4/ril/telephony
+# RIL, use AOSP ril
+#TARGET_SPECIFIC_HEADER_PATH += device/samsung/smdk4210-tab/overlay/include
+#BOARD_PROVIDES_LIBRIL := true
+#BOARD_MODEM_TYPE := xmm6260
+BOARD_RIL_CLASS := ../../../device/samsung/smdk4210-tab/overlay/telephony
