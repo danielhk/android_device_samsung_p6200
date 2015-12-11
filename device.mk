@@ -19,6 +19,10 @@ $(call inherit-product-if-exists, vendor/samsung/p6200/vendor.mk)
 # Set preferred size for assets
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
+# use init.smdk4210.rc for p6200
+PRODUCT_COPY_FILES += \
+	device/samsung/smdk4210-tab/rootdir/init.smdk4210.rc:root/init.smdk4210.rc
+
 # International variants have proximity sensor
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
