@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +23,7 @@ DEVICE_RESOLUTION := 1024x600
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # Pull in GSM-specific stuff such as APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
