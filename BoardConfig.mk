@@ -19,6 +19,8 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/p6200/overlay
 # Include common smdk4210-tab configuration
 -include device/samsung/smdk4210-tab/BoardConfigCommon.mk
 
+TARGET_IS_TAB_P2 := true
+
 TARGET_OTA_ASSERT_DEVICE := p6200,GT-P6200,GT-P6201,GT-P6200L
 
 TARGET_KERNEL_CONFIG := cyanogenmod_p6200_defconfig
