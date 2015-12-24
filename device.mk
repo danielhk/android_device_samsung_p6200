@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # use init.smdk4210.rc for p6200
 PRODUCT_COPY_FILES += \
-	device/samsung/smdk4210-tab/rootdir/init.smdk4210.rc:root/init.smdk4210.rc
+    device/samsung/smdk4210-tab/rootdir/init.smdk4210.rc:root/init.smdk4210.rc
 
 # International variants have proximity sensor
 PRODUCT_COPY_FILES += \
@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 # We need to build the GPS interposition library for the GPS to work, also M removes
 # libstlport, but some of our blobs need it, so we add it back in source
 PRODUCT_PACKAGES += \
-	libdmitry
+    libdmitry
 
 # Radio
 $(call inherit-product, build/target/product/telephony.mk)
